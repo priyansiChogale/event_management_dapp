@@ -1,0 +1,101 @@
+.userEventsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin-top: 20px;
+  background: #f2f2f2;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#goBackToEvents {
+  align-self: flex-start;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 5px;
+  background: #fff;
+  border: solid black 2px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#participatedEventsLabel {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#participatedEventsList {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 98%;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.userEvent {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.userEvent:hover {
+   box-shadow: 1px 1px 10px;
+}
+
+.upper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  background: #e6ffe6;
+  border-radius: 10px 10px 0px 0px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.userEventImage {
+  flex-shrink: 0;
+  width: 450px;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.userEventId {
+  position: absolute;
+  align-self: flex-start;
+  font-size: 0.8em;
+  top: 10px;
+  left: 10px;
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+
+.isUserEventOpen {
+  position: absolute;
+  font-weight: bold;
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.lower {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 0.9em;
+  align-items: center;
+}
+
+.userEventTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+}

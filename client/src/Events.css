@@ -1,0 +1,119 @@
+.eventsWrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.eventsList {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 98%;
+  background: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#eventsListHeader {
+  width: 99%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#showUserEventsBtn {
+  border: solid black 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-start;
+  padding: 5px 10px;
+}
+
+#showAddEventFormBtn {
+  border: solid black 2px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+#eventsListLabel {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.event {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.event:hover {
+   box-shadow: 1px 1px 10px;
+}
+
+.upper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  background: #e6ffe6;
+  border-radius: 10px 10px 0px 0px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.eventImage {
+  flex-shrink: 0;
+  width: 450px;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.eventId {
+  position: absolute;
+  align-self: flex-start;
+  font-size: 0.8em;
+  top: 10px;
+  left: 10px;
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+
+.isEventOpen {
+  position: absolute;
+  font-weight: bold;
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.lower {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 0.9em;
+  align-items: center;
+}
+
+.eventTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.buyTicketBtn {
+  margin: 10px 20px;
+}
